@@ -9,7 +9,7 @@
 </div>
 
 ## What it is
-Flightdeck Hugo is an opinionated starter project for [Hugo}(https://gohugo.io/) that takes advantage of Hugo's built in [asset pipeline](https://gohugo.io/hugo-pipes/). 
+Flightdeck Hugo is an opinionated starter project for [Hugo](https://gohugo.io/) that takes advantage of Hugo's built in [asset pipeline](https://gohugo.io/hugo-pipes/). 
 
 Offering:
 - Base templates using HTML with partials creating commponents 
