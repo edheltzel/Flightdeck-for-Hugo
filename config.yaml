@@ -1,0 +1,22 @@
+baseURL:  "/"
+languageCode:  "en-us"
+title:  "My New Hugo Site"
+
+googleAnalytics: UA-xxxxxx-xx
+enableRobotsTXT: true
+disableRSS: true
+disableKinds: [
+  "sections",
+  "taxonomy",
+  "taxonomyTerm",
+  "RSS"
+]
+
+privacy:
+  googleAnalytics:
+    anonymizeIP: true
+    respectDoNotTrack: true
+  twitter:
+    enableDNT: true
+  youtube:
+    privacyEnhanced: true
