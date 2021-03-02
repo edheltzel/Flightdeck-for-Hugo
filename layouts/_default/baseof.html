@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode | default "en" }}'>
+  <head>
+    {{ block "main" . }}
+      {{ partial "site/meta.html" . }}
+    {{ end }}
+    <title>
+      {{ block "title" . }}
+        {{  with .Ttile }} {{ . }} |
+        {{ end }}
+        {{ .Site.Title }}
+      {{ end }}
+    </title>
+    {{ block "site/styles" . }}
+      {{ partial "site.styles.html" . }}
+    {{ end }}
+  </head>
+  <body>
+
+  </body>
+</html>
