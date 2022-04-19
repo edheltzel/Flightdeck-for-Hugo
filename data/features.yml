@@ -1,0 +1,29 @@
+feature:
+  enabled: true
+  title: "Featured Items"
+  subtitle: "The Featured Items"
+  featured_items:
+    - title: "Featured 1"
+      feature_image: "https://picsum.photos/150"
+      content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est
+          quod error enim eligendi perferendis excepturi, dolore consequatur
+          voluptatibus aliquid eius similique tempora maxime et, mollitia
+          repudiandae, saepe minima odio.
+    - title: "Featured 2"
+      feature_image: "https://picsum.photos/150"
+      content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est
+          quod error enim eligendi perferendis excepturi, dolore consequatur
+          voluptatibus aliquid eius similique tempora maxime et, mollitia
+          repudiandae, saepe minima odio.
+    - title: "Featured 3"
+      feature_image: "https://picsum.photos/150"
+      content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est
+          quod error enim eligendi perferendis excepturi, dolore consequatur
+          voluptatibus aliquid eius similique tempora maxime et, mollitia
+          repudiandae, saepe minima odio.
+    - title: "Featured 4"
+      feature_image: "https://picsum.photos/150"
+      content: Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est
+          quod error enim eligendi perferendis excepturi, dolore consequatur
+          voluptatibus aliquid eius similique tempora maxime et, mollitia
+          repudiandae, saepe minima odio.

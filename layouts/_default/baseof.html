@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang='{{ .Site.LanguageCode | default "en" }}'>
+
+<head>
+
+  {{ block "meta" . }}{{ partial "site/meta.html" . }}{{ end }}
+
+  <title>
+    {{ block "title" . }}
+    {{ with .Title }}{{ . }} | {{ end }}{{ .Site.Title }}
+    {{ end }}
+  </title>
+
+  {{ block "site/styles" . }}{{ partial "site/styles.html" . }}{{ end }}
+
+</head>
+
+<body>
+
+  {{ block "header" . }}{{ partial "site/header.html" . }}{{ end }}
+
+  <main class="site-main" role="main">
+
+    {{ block "main" . }}{{ end }}
+
+  </main>
+
+  {{ block "footer" . }}{{ partial "site/footer.html" . }}{{ end }}
+
+  {{ block "scripts" . }}{{ partial "site/scripts.html" . }}{{ end }}
+
+  {{ block "page-scripts" . }}{{ end }}
+
+  {{- if not .Site.IsServer -}}
+  {{ template "_internal/google_analytics_async.html" . }}
+  {{- end -}}
+
+</body>
+
+</html>

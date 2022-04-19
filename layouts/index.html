@@ -1,0 +1,70 @@
+{{ define "main" }}
+
+{{ block "masthead" . }}{{ partial "site/masthead.html" . }}{{ end }}
+{{ partial "features.html" . }}
+
+<section class="section">
+  <div class="container">
+    <hr />
+    <div class="columns">
+      <div class="column is-two-thirds">
+        <h2 class="title is-size-1">First featurette heading</h2>
+        <h3 class="subtitle is-size-2">This is a subtitle</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+          blanditiis dolores sequi porro mollitia quasi, provident atque nisi
+          minus sed iste. Harum odit animi vero ex aliquid dolorem fugit
+          provident.
+        </p>
+      </div>
+      <div class="column has-text-centered">
+        <img src="https://picsum.photos/350" alt="" class="img-fluid" />
+      </div>
+    </div>
+    <hr />
+    <div class="columns">
+      <div class="column has-text-centered">
+        <img src="https://picsum.photos/350" alt="" class="img-fluid" />
+      </div>
+      <div class="column is-two-thirds">
+        <h2 class="title is-size-1">Second featurette heading</h2>
+        <h3 class="subtitle is-size-2">This is a subtitle</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+          blanditiis dolores sequi porro mollitia quasi, provident atque nisi
+          minus sed iste. Harum odit animi vero ex aliquid dolorem fugit
+          provident.
+        </p>
+      </div>
+    </div>
+    <hr />
+    <div class="columns">
+      <div class="column is-two-thirds">
+        <h2 class="title is-size-1">Third featurette heading</h2>
+        <h3 class="subtitle is-size-2">This is a subtitle</h3>
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusantium,
+          blanditiis dolores sequi porro mollitia quasi, provident atque nisi
+          minus sed iste. Harum odit animi vero ex aliquid dolorem fugit
+          provident.
+        </p>
+      </div>
+      <div class="column has-text-centered">
+        <img src="https://picsum.photos/350" alt="" class="img-fluid" />
+      </div>
+    </div>
+    <hr />
+  </div>
+</section>
+
+<section class="hero is-medium is-info is-bold">
+  <div class="hero-body has-text-centered">
+    <div class="container">
+      <h1 class="title is-size-1">Big Bold Title</h1>
+      <h2 class="subtitle is-size-4">Smaller Subtitle</h2>
+      <a href="#" class="button is-dark is-inverted is-outlined is-uppercase has-text-weight-bold">An exciting link!</a>
+    </div>
+  </div>
+</section>
+
+{{ end }}

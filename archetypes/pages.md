@@ -1,10 +1,10 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
 layout: {{ .Name }}
-description: "Meta Description for this page"
+description: "This is the meta description"
 menu:
   main:
     weight: 10
-url: "/ {{ .Name }}"
+url: "/{{ .Name }}"
 draft: true
 ---

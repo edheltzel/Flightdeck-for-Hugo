@@ -1,11 +1,27 @@
 {
   "name": "fd-hugo",
-  "version": "1.0.0",
-  "main": "index.js",
+  "version": "0.1.0",
   "home": "https://github.com/flight-deck/flightdeck-hugo#readme",
   "repository": "git@github.com:flight-deck/flightdeck-hugo.git",
   "author": "Ed Heltzel <ed@rainyday.media>",
   "license": "MIT",
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR"
+  ],
+  "scripts":{
+    "start": "hugo server -D -F -e development & gulp",
+    "preview": "hugo serve -e production & build:images",
+    "build": "hugo --gc --minify -e production & build:images",
+    "build:preview": "hugo --gc -e production",
+    "build:images": "gulp images",
+    "deploy": "./liftoff ready go",
+    "deploy:test": "./liftoff ready",
+    "clean:node": "rm -rf node_modules/ yarn.lock package-lock.json",
+    "clean:site": "rm -rf public/",
+    "purge": "npm clean:site & clean:node && yarn install"
+  },
   "devDependencies": {
     "@fullhuman/postcss-purgecss": "^4.0.2",
     "autoprefixer": "^10.2.4",
