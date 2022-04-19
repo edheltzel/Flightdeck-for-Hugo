@@ -1,52 +1,7 @@
 {{ define "main" }}
+
 {{ block "masthead" . }}{{ partial "site/masthead.html" . }}{{ end }}
-<section class="section">
-  <div class="container">
-    <div class="columns">
-      <div class="column feature">
-        <img
-          src="https://picsum.photos/150"
-          alt="Feature Image"
-          class="is-rounded"
-        />
-        <h2 class="title is-size-3">Heading</h2>
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi est
-          quod error enim eligendi perferendis excepturi, dolore consequatur
-          voluptatibus aliquid eius similique tempora maxime et, mollitia
-          repudiandae, saepe minima odio.
-        </p>
-      </div>
-      <div class="column feature">
-        <img
-          src="https://picsum.photos/150"
-          alt="Feature Image"
-          class="is-rounded"
-        />
-        <h2 class="title is-size-3">Heading</h2>
-        <p>
-          Placeat labore earum neque dolore corrupti. Ad incidunt quaerat minima
-          amet. Porro vitae, quisquam suscipit incidunt similique deserunt id
-          dolor? Quae odio explicabo ipsa ratione eos architecto fuga autem non!
-        </p>
-      </div>
-      <div class="column feature">
-        <img
-          src="https://picsum.photos/150"
-          alt="Feature Image"
-          class="is-rounded"
-        />
-        <h2 class="title is-size-3">Heading</h2>
-        <p>
-          Fugit molestias ipsum numquam ratione, libero reiciendis voluptates!
-          Numquam mollitia porro ipsam sint nesciunt expedita consectetur
-          debitis laboriosam doloremque non? Laboriosam eligendi ullam debitis,
-          facilis magnam tempora quidem! Consectetur, dolores!
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
+{{ partial "features.html" . }}
 
 <section class="section">
   <div class="container">
@@ -111,4 +66,5 @@
     </div>
   </div>
 </section>
+
 {{ end }}
