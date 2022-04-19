@@ -7,7 +7,6 @@
 {{ end }}
 
 {{ if eq hugo.Environment "production" }}
-{{/* https://gohugo.io/hugo-pipes/bundling/ */}}
 
 {{ $script := resources.Get "js/scripts.js" | minify | fingerprint }}
 

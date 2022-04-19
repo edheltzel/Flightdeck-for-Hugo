@@ -1,0 +1,25 @@
+
+<section class="section">
+  <div class="container">
+    <div class="columns">
+      {{ $data := index .Site.Data }}
+      {{"<!-- features -->" | safeHTML }}
+      {{ with $data.features.features }}
+      {{ range $index, $element:= .feature_items  }}
+      <div class="column feature">
+        <img
+          src="{{ .feature_image }}"
+          alt="Feature Image"
+          class="is-rounded"
+        />
+        <h2 class="title is-size-3">{{ .title }}</h2>
+        <p>
+          {{ .content }}
+        </p>
+      </div>
+      {{ end }}
+
+      {{ end }}
+    </div>
+  </div>
+</section>
