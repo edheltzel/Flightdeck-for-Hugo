@@ -1,5 +1,5 @@
 <div align="center">
-<p><img src="https://d.pr/free/i/FDUErn+" alt="Flightdeck Logo"></p>
+<p><img src="https://rdm.sfo2.digitaloceanspaces.com/flightdeck/v3-flightdeck__logo--purple-haze-600x528.png" alt="Flightdeck Logo"></p>
 
 [![release](https://img.shields.io/github/release/flight-deck/flightdeck-hugo.svg?style=for-the-badge&logo=github&logoColor=white&colorA=101119&colorB=6D57FF)](https://github.com/flight-deck/flightdeck-hugo/releases/latest) [![hugo](https://img.shields.io/badge/Hugo-v0.66.0+-373277.svg?style=for-the-badge&logo=hugo&logoColor=white&colorA=101119&colorB=7273D6)](https://github.com/gohugoio/hugo/releases/latest) [![license](https://img.shields.io/badge/License-MIT-373277.svg?style=for-the-badge&l&logoColor=white&colorA=101119&colorB=42557B)](https://github.com/flight-deck/flightdeck-hugo/blob/master/LICENSE)
 
@@ -9,9 +9,11 @@
 </div>
 
 ## What it is
+
 Flightdeck for Hugo is an opinionated starter project for [Hugo](https://gohugo.io/) that takes advantage of Hugo's built in [asset pipeline](https://gohugo.io/hugo-pipes/).
 
 Includes:
+
 - Base templates using HTML with partials creating components.
 - Hugo Pipes ready to compile, minify, and MD5-hash for Scss/CSS and JavaScript with environment variables.
 - Hugo Pipes for PostCSS using Autoprefixer and PurgeCSS
@@ -21,12 +23,15 @@ Includes:
 - Deployment with rsync and [Flightdeck Liftoff](https://github.com/flight-deck/flightdeck-liftoff).
 
 ## What it is NOT
+
 Flightdeck for Hugo **IS NOT** a Hugo theme. It **CANNOT** be dropped inside the `/themes` directory.
 
 ## Prerequisites
+
 Make sure that Hugo is installed by checking out the [Quick Start Guide](https://gohugo.io/getting-started/quick-start/#step-1-install-hugo) on the Hugo docs... make sure you're running the extended version.
 
 ## Usage
+
 First things first, clone this repo:
 
 ```shell
@@ -34,21 +39,25 @@ git clone git@github.com:flight-deck/Flightdeck-for-Hugo.git MY-HUGO-PROJECT && 
 ```
 
 Then run the Node commands
+
 ```shell
 yarn
 yarn start
 ```
+
 **OR**
 
 ```shell
 npm install
 npm start
 ```
+
 ### Adding Pages
 
 To add main site pages run the `hugo new` command and create a markdown file in the `pages/` directory. Then create a corresponding `html` template file in `layouts/pages/`
 
 Example:
+
 ```
 hugo new pages/my-new-page.md
 ```
@@ -68,6 +77,7 @@ There are 4 available Scripts:
 - `yarn clean:node` - removes only Node dependencies
 - `yarn clean:site` - removes the `public/` directory
 - `yarn purge` - removes everything and does a fresh install using Yarn.
+
 ## File Structure
 
 ```
@@ -112,4 +122,5 @@ There are 4 available Scripts:
 │ package.json
 │ README.md                  - The README file you're reading right now
 ```
+
 ### Hope you enjoy the flight. 🚀
