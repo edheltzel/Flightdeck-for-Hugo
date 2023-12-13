@@ -41,8 +41,8 @@ git clone git@github.com:flight-deck/Flightdeck-for-Hugo.git MY-HUGO-PROJECT && 
 Then run the Node commands
 
 ```shell
-yarn
-yarn start
+pnpm
+pnpm start
 ```
 
 **OR**
@@ -68,15 +68,15 @@ The `header.html` partial is configured to generate a main site navigation by ut
 
 There are 4 available Scripts:
 
-- `yarn start` - Runs development server with CSS sourcemaps and drafts enabled, as well as the image task with watch.
-- `yarn build:preview` - Runs the server with `production` for the environment with asset minification and postCSS enabled, and optimized images
-- `yarn build` - The same as `build:preview` but builds production ready site in `public` directory with minified/optimized assets
-- `yarn build:images` - Runs gulp images task to optimize images in `./static/img/`
-- `yarn deploy` - uses (Flightdeck Liftoff)[https://github.com/flight-deck/Flightdeck-Liftoff] for deployments, see [Liftoff for usage](https://github.com/flight-deck/Flightdeck-Liftoff#readme)
+- `pnpm start` - Runs development server with CSS sourcemaps and drafts enabled, as well as the image task with watch.
+- `pnpm build:preview` - Runs the server with `production` for the environment with asset minification and postCSS enabled, and optimized images
+- `pnpm build` - The same as `build:preview` but builds production ready site in `public` directory with minified/optimized assets
+- `pnpm build:images` - Runs gulp images task to optimize images in `./static/img/`
+- `pnpm deploy` - uses (Flightdeck Liftoff)[https://github.com/flight-deck/Flightdeck-Liftoff] for deployments, see [Liftoff for usage](https://github.com/flight-deck/Flightdeck-Liftoff#readme)
   - Please note: Hugo's built in deployment options currently does not support DigitalOcean
-- `yarn clean:node` - removes only Node dependencies
-- `yarn clean:site` - removes the `public/` directory
-- `yarn purge` - removes everything and does a fresh install using Yarn.
+- `pnpm clean:node` - removes only Node dependencies
+- `pnpm clean:site` - removes the `public/` directory
+- `pnpm purge` - removes everything and does a fresh install using pnpm.
 
 ## File Structure
 
