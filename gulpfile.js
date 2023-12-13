@@ -2,7 +2,6 @@
 
 // Load plugins
 const { series, parallel, src, dest, watch } = require('gulp');
-const imagemin = require('gulp-imagemin');
 
 // Flightdeck manifest
 const flightdeck = {
@@ -20,12 +19,14 @@ const flightdeck = {
 }
 
 // Optimize Images
-function images(done) {
+async function images(done) {
+  const { default: imagemin, gifsicle, mozjpeg, optipng } = await import('gulp-imagemin');
+
   src(flightdeck.images.src)
     .pipe(imagemin([
-      imagemin.gifsicle({ interlaced: flightdeck.images.interlaced }),
-      imagemin.mozjpeg(flightdeck.images.mozjpeg),
-      imagemin.optipng({ optimizationLevel: flightdeck.images.optimizationLevel })
+      gifsicle({ interlaced: flightdeck.images.interlaced }),
+      mozjpeg(flightdeck.images.mozjpeg),
+      optipng({ optimizationLevel: flightdeck.images.optimizationLevel })
       ],
       {verbose: flightdeck.images.verbose}
     ))
@@ -42,4 +43,3 @@ function watchFiles() {
 exports.images = images;
 exports.watch = watchFiles;
 exports.default = series(images, watchFiles);
-
